@@ -1,0 +1,61 @@
+# Minecraft Java Edition 1.16.5
+# Connection and blockID : MCJE
+# World parameters : MCJE
+
+print("param_MCJE loaded")
+
+# axis parameters
+AXIS_WIDTH = 40       # x, z: -40 .. 0 .. 40
+AXIS_TOP = 127
+AXIS_Y_V_ORG = 96     # y of virtual origin
+AXIS_BOTTOM = 63      # y: 63 .. 96 .. 127
+
+# virtical levels
+Y_TOP = 255           # the top where blocks can be set
+Y_CLOUD_BOTTOM = 128  # the bottom of clouds
+Y_SEA = 62            # the sea level
+Y_BOTTOM = 0          # the bottom where blocks can be set
+Y_BOTTOM_STEVE = -64  # the bottom where Steve can go down
+
+# connection port
+PORT_MC = 14712
+
+# block IDs  You can find IDs here: https://minecraft-ids.grahamedgecombe.com/
+AIR = "air"
+STONE = "stone"
+GRASS_BLOCK = "grass_block"
+GOLD_BLOCK = "gold_block"
+IRON_BLOCK = "iron_block"
+GLOWSTONE = "glowstone"
+SEA_LANTERN_BLOCK = "sea_lantern"
+
+# some good blocks for grid like patterns you can count blocks easily
+GLASS = "glass"
+RED_GLASS = "red_stained_glass"
+LIME_GLASS = "lime_stained_glass"
+TNT = "tnt"
+DIAMOND_BLOCK = "diamnd_block"
+FURNACE_INACTIVE = "furnace"
+FURNACE_ACTIVE = "lit_furnace"
+GLASS_PANE = "glass_pane"
+COAL_BLOCK = "coal_block"
+SLIME_BLOCK = "slime"
+REDSTONE_BLOCK = "redstone_block"
+
+# there are kind of concretes for instance
+CONCRETE = "white_concrete"
+LIGHT_BLUE_CONCRETE = "light_blue_concrete"
+ORANGE_CONCRETE = "orange_concrete"
+LIME_CONCRETE = "lime_concrete"
+PINK_CONCRETE = "pink_concrete"
+YELLOW_CONCRETE = "yellow_concrete"
+LIGHT_GRAY_CONCRETE = "light_gray_concrete"
+BROWN_CONCRETE = "brown_concrete"
+RED_CONCRETE = "red_concrete"
+BLACK_CONCRETE = "black_concrete"
+GRAY_CONCRETE = "gray_concrete"
+CYAN_CONCRETE = "cyan_concrete"
+PURPLE_CONCRETE = "purple_concrete"
+MAGENTA_CONCRETE = "magenta_concrete"
+BLUE_CONCRETE = "blue_concrete"
+GREEN_CONCRETE ="green_concrete"
