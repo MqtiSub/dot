@@ -42,6 +42,6 @@ class MyApp1(tkinter.Frame):
         
         
 root = tkinter.Tk()
-root.geometry("100x260")
+root.geometry("300x260")
 app = MyApp1(master=root)
 app.mainloop()

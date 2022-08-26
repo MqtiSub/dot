@@ -22,7 +22,7 @@ colors = {
 'BLACK' : [0,0,0],
 }
 
-STA_X = 0 ; STA_Y =70 ; STA_Z = 0
+STA_X = 0 ; STA_Y =75 ; STA_Z = 0
 
 def mosaic(_pass,alpha):
     img = cv2.imread(_pass)
@@ -30,6 +30,7 @@ def mosaic(_pass,alpha):
     img = cv2.resize(img,(int(w*alpha),int(h*alpha)))
     mosaic_image = "./images/mosaic.png"
     cv2.imwrite(mosaic_image,img)
+    print("succeed mosaiced")
     return mosaic_image
 
 def color_to_16(mosaic_image):
@@ -52,6 +53,7 @@ def color_to_16(mosaic_image):
     new_image = cv2.cvtColor(q_ndarray,cv2.COLOR_RGB2BGR)
     img16 = "./images/output.png"
     cv2.imwrite(img16,new_image)
+    print("succeed img16")
     return img16
 
 def draw_mc(img16):
