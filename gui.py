@@ -1,5 +1,6 @@
 import os, tkinter, tkinter.filedialog, tkinter.messagebox
 from main import mosaic,color_to_16,draw_mc
+from badapple_mc import badapple
 #https://shizenkarasuzon.hatenablog.com/entry/2020/03/21/002600
 #参考元です!
 class MyApp1(tkinter.Frame):
@@ -15,6 +16,11 @@ class MyApp1(tkinter.Frame):
         self.Button2["text"] = "RunIN MC"
         self.Button2["command"] = self.Button2_Func
         self.Button2.pack(side="top")
+
+        self.Button3 = tkinter.Button(self, bg='#000000', fg='#ffffff', width=12, height = 5)
+        self.Button3["text"] = "BadApple"
+        self.Button3["command"] = self.Button3_Func
+        self.Button3.pack(side="top")
 
         self.ButtonQuit = tkinter.Button(self, bg='#000000', fg='#ffffff', width=12, height = 5)
         self.ButtonQuit["text"] = "QUIT"
@@ -35,6 +41,11 @@ class MyApp1(tkinter.Frame):
             print("check the path!!")
         else:
             draw_mc(self.img16_path)
+    
+    def Button3_Func(self):
+        print('badapple')
+        badapple()
+        print('succeed')
         
     def QuitApp(self):
         print("quit this App")
@@ -42,6 +53,6 @@ class MyApp1(tkinter.Frame):
         
         
 root = tkinter.Tk()
-root.geometry("300x260")
+root.geometry("300x350")
 app = MyApp1(master=root)
 app.mainloop()
