@@ -16,11 +16,9 @@ def badapple():
     if not ok:
         print('Cannot read video file')
         sys.exit()
-    w,h,ch = frame.shape
     mc = Minecraft.create(port=param.PORT_MC)
     img_array = [[-1] * 80 for _ in range(60)]
     succeed = False
-
     while True:
         ok,frame = video.read()
         if(ok):
